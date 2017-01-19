@@ -6,6 +6,8 @@
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
+
+
 }
 
 #card-one figure {
@@ -14,14 +16,19 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #ff0000;
+
 }
 
 #card-one .front {
-  background-color: #faebd7;
+  background-color: #ff99ff;
+
 }
 #card-one .back {
   transform: rotateY( 180deg );
-  background-color: #faebd7;
+  background-color: #ff99ff;
 }
 
 #card-one.flipped {
@@ -44,14 +51,17 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #33ff33;
 }
 
 #card-two .front {
-  background-color: #faebd7;
+  background-color: #ccffff;
 }
 #card-two .back {
   transform: rotateY( 180deg );
-  background-color: #faebd7;
+  background-color: #ccffff;
 }
 
 #card-two.flipped {
@@ -74,19 +84,32 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #ff0033;
 }
 
 #card-three .front {
-  background-color: #faebd7;
+  background-color: #cc33ff;
 }
 #card-three .back {
   transform: rotateY( 180deg );
-  background-color: #faebd7;
+  background-color: #cc33ff;
 }
 
 #card-three.flipped {
   transform: rotateY( 180deg );
 }
+
+.title { 
+  font-family: sans-serif;
+  text-align: center;
+   }
+
+ul {
+  list-style: none;
+}   
+   
 
 figure img {
   width: 70%;
